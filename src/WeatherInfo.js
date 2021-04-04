@@ -35,54 +35,6 @@ export default function WeatherInfo(props) {
           <li>Humidity: {props.data.humidity}%</li>
         </ul>
       </p>
-
-    <div className="future-forecast">
-      <div className="row">
-      <div className="col-3">
-        Mon
-      </div>
-       <div className="col-3">
-        Tues
-      </div>
-       <div className="col-3">
-        Weds
-      </div>
-       <div className="col-3">
-        Thurs
-      </div>
-      </div>
-
-       <div className="row">
-      <div className="col-3">
-        Logo
-      </div>
-       <div className="col-3">
-        Logo
-      </div>
-       <div className="col-3">
-        Logo
-      </div>
-       <div className="col-3">
-        Logo
-      </div>
-      </div>
-
-      <div className="row">
-      <div className="col-3">
-        16°C
-      </div>
-       <div className="col-3">
-        16°C
-      </div>
-       <div className="col-3">
-        16°C
-      </div>
-       <div className="col-3">
-        16°C
-      </div>
-      </div>
-
-      </div>
       
       </div> ); 
       };
