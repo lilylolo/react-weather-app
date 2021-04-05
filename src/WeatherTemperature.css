@@ -1,0 +1,9 @@
+.temperature {
+  font-size: 60px;
+  float: left;
+}
+
+.units {
+  font-size: 25px;
+  float: right;
+}

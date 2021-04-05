@@ -1,0 +1,15 @@
+h1 {
+  margin: 25px 0px 0px 0px;
+}
+
+.weather-temperature {
+  margin: 30px 10px 0px 0px;
+}
+.weather-icon {
+  margin-top: 40px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 15px;
+}

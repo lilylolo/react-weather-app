@@ -45,21 +45,20 @@ export default function Weather(props) {
     
         <div className="App-wrapper">
 
-            <form onSubmit={handleSubmit}>
+            <form className="form" onSubmit={handleSubmit}>
                 <div className="row">
-                    <div className="col-6">
+                    <div>
                             <input 
                             type="text" 
                             placeholder="Enter a city.." 
                             autoComplete="off"
-                            onChange={handleCityChange} />
+                            onChange={handleCityChange} 
+                            className="search-box"/>
                     </div>
-                    <div className="col-3">
-                            <input type="submit" value="Search"/>
+                    <div>
+                            <input  type="submit" type="button" className="btn btn-light" value="Search" />
                     </div>
-                    <div className="col-3">
-                            <input type="submit" value="Current"/>
-                    </div>
+                
                   </div>
             </form>
 
