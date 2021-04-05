@@ -26,7 +26,7 @@ if (loaded) {
                 if (index < 5) {
                     return (
                         <div className="col-3">
-                        <WeatherForecastDay data={forecastData} />
+                        <WeatherForecastDay data={dailyForecast} />
                         </div>
                     );
             } else {

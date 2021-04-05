@@ -22,7 +22,7 @@ export default function WeatherInfo(props) {
 
       <div className="col-6">
         
-        <WeatherIcon code={props.data.icon} />
+        <WeatherIcon code={props.data.weather[0].icon} />
 
       </div>
       </div>

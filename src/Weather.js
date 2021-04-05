@@ -7,7 +7,7 @@ import WeatherForecast from './WeatherForecast';
 
 
 export default function Weather(props) {
-  const [weatherData, setWeatherData] = useState({loaded: false});
+  const [weatherData, setWeatherData] = useState({ loaded: false });
   const [city, setCity] = useState(props.defaultCity);
   
   function handleResponse(response) {
@@ -45,31 +45,28 @@ export default function Weather(props) {
     
         <div className="App-wrapper">
 
-       <form onSubmit={handleSubmit}>
-         <div className="row">
-          <div className="col-6">
-            <input 
-            type="text" 
-            placeholder="Enter a city.." 
-            autoComplete="off"
-            onChange={handleCityChange} />
-          </div>
-          <div className="col-3">
-            <input type="submit" value="Search"/>
-          </div>
-          <div className="col-3">
-            <input type="submit" value="Current"/>
-          </div>
-          </div>
-       </form>
+            <form onSubmit={handleSubmit}>
+                <div className="row">
+                    <div className="col-6">
+                            <input 
+                            type="text" 
+                            placeholder="Enter a city.." 
+                            autoComplete="off"
+                            onChange={handleCityChange} />
+                    </div>
+                    <div className="col-3">
+                            <input type="submit" value="Search"/>
+                    </div>
+                    <div className="col-3">
+                            <input type="submit" value="Current"/>
+                    </div>
+                  </div>
+            </form>
 
        <WeatherInfo data={weatherData} />
 
        <WeatherForecast coordinates={weatherData.coordinates}/>
-
-    
-    
-    </div>
+          </div>
     );
 
   } else {
